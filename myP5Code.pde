@@ -61,6 +61,8 @@ draw = function(){
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 drawWave(mouseX, mouseY)
+drawSwimmer(mouseX+50,mouseY)
+drawShark(mouseX+100,mouseY)
 }
 
 //🟡drawFish Function - will run when called
@@ -74,8 +76,9 @@ var drawWave = function(WaveX, WaveY){
 };
 var drawSwimmer = function(SwimmerX, SwimmerY){
 text("🏊‍♂️", SwimmerX,SwimmerY);
-
-
+}
+var drawShark = function(SharkX, SharkY){
+  text("🦈", SharkX,SharkY );
 }
 
 
